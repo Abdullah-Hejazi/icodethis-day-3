@@ -1,0 +1,197 @@
+@font-face {
+    font-family: Tiltillium;
+    src: url('TitilliumWeb-Regular.ttf');
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #dfebeb;
+    font-family: Tiltillium;
+}
+
+.flex-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    background-color: white;
+    width: 350px;
+    max-width: 80vw;
+    padding: 50px;
+    border-radius: 25px;
+    color: #130f26;
+    box-shadow: 0px 10px 40px 40px #cbd6dc5b;
+}
+
+.plan-container-title {
+    color: #130f26;
+    margin-bottom: 20px;
+}
+
+.plan-container {
+    border-radius: 10px;
+    padding: 20px;
+    padding-left: 5px;
+    border: 1px solid #dbe0e0;
+    background-color: #f4fafa;
+
+    display: flex;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.plan-container-left  {
+    padding: 0px 10px;
+}
+
+.plan-container-left input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+}
+
+.plan-radio-button {
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    border: 1px solid #dbe0e0;
+    border-radius: 50%;
+}
+
+.plan-container:hover input ~ .plan-radio-button {
+    background-color: #f2f3f3;
+}
+
+.plan-container input:checked ~ .plan-radio-button {
+    background-color: #130f2a;
+}
+
+.plan-radio-button:after {
+    content: "";
+    position: relative;
+    display: none;
+  }
+
+.plan-container input:checked ~ .plan-radio-button:after {
+    display: block;
+}
+
+.plan-container .plan-radio-button:after {
+    top: 7px;
+    left: 7px;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: white;
+}
+
+.plan-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.plan-text {
+    font-size: 14px;
+}
+
+.plan-agreement-container {
+    margin-top: 20px;
+}
+
+.plan-agreement {
+    margin-top: 20px;
+    display: flex;
+}
+
+.plan-checkbox-container {
+    padding: 0px 10px 0px 0px
+}
+
+.plan-agreement-text {
+    font-size: 14px;
+}
+
+.plan-checkbox-container {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.plan-checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+}  
+
+.plan-checkbox-placeholder {
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    border: 1px solid #dbe0e0;
+    border-radius: 7px;
+}
+
+.plan-checkbox-container:hover input ~ .plan-checkbox-placeholder {
+    background-color: #f8f8f8;
+}
+
+.plan-checkbox-container input:checked ~ .plan-checkbox-placeholder {
+    background-color: #130f28;
+}
+
+.plan-checkbox-placeholder:after {
+    content: "";
+    display: none;
+}
+
+.plan-checkbox-container input:checked ~ .plan-checkbox-placeholder:after {
+    display: block;
+}
+
+.plan-checkbox-container .plan-checkbox-placeholder:after {
+    left: 8px;
+    top: 4px;
+    position: relative;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.plan-button-container {
+    color: white;
+    background-color: #130f26;
+    width: 90%;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-weight: 600px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.plan-note {
+    text-align: center;
+    margin-top: 15px;
+}

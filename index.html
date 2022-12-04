@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>ICodeThis Day 3</title>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="main-container">
+            <h2 class="plan-container-title">Choose a trial plan</h2>
+
+            <div class="plan-container" onclick="selectPlan(event)">
+                <div class="plan-container-left">
+                    <input type="radio" name="plan">
+                    <div class="plan-radio-button"></div>
+                </div>
+
+                <div class="plan-container-right">
+                    <div class="plan-title">Standard</div>
+                    <div class="plan-text">
+                        5 TB of space with easy-to-use team management and collaboration tools.
+                    </div>
+                </div>
+            </div>
+
+            <div class="plan-container" onclick="selectPlan(event)">
+                <div class="plan-container-left">
+                    <input type="radio" name="plan">
+                    <div class="plan-radio-button"></div>
+                </div>
+
+                <div class="plan-container-right">
+                    <div class="plan-title">Advanced</div>
+                    <div class="plan-text">
+                        As much space as your team needs with sohpisticated admin, audit, security and integration capabilities.
+                    </div>
+                </div>
+            </div>
+
+            <div class="plan-agreement-container">
+                <div class="plan-agreement">
+                    <div class="plan-checkbox-container">
+                        <input class="plan-checkbox" type="checkbox">
+                        <div class="plan-checkbox-placeholder"></div>
+                    </div>
+                    <div class="plan-agreement-text">
+                        I agree to the <span class="plan-link">Agreement and Terms</span>.
+                        Find out more about how we  use and protect your data in our <span class="plan-link">Privacy Policy</span>.
+                    </div>
+                </div>
+    
+                <div class="plan-agreement">
+                    <div class="plan-checkbox-container">
+                        <input class="plan-checkbox" type="checkbox">
+                        <div class="plan-checkbox-placeholder"></div>
+                    </div>
+
+                    <div class="plan-agreement-text">
+                       I'd like to receive direct marketing email updates.
+                    </div>
+                </div>
+            </div>
+
+            <div class="plan-button-container">
+                Start free trial
+            </div>
+
+            <div class="plan-note">
+                No credit card needed
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
